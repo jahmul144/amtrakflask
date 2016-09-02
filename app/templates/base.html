@@ -1,0 +1,18 @@
+
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Pricing</title>
+    {% else %}
+    <title>Welcome to Pricing Amtrak</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Amtrak Pricing: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
+
+
+    

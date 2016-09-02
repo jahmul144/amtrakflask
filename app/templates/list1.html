@@ -1,0 +1,29 @@
+{% extends "base2.html" %}
+{% block content %}
+      <table class="table">
+        
+         <thead>
+            
+            <td>Train Number</td>
+            <td>Date</td>
+            <td> Departure</td>
+            <td> Value Price</td>
+            <td> Flexible Price</td>
+            
+
+         </thead>
+         <tbody class="table-hover">
+        
+         {% for row in rows %}  
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[1]}}</td>
+			   <td>{{row[2]}}</td>
+			   <td>{{row[3]}}</td>
+			    <td>{{row[4]}}</td>
+            </tr>
+         {% endfor %}
+         </tbody>
+      </table>
+      
+{% endblock %}
